@@ -1,0 +1,90 @@
+.main-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 84px 26px 104px;
+
+  &-nav {
+    @media (max-width: $tablet) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      padding: 30px;
+      background-color: $color-text;
+      transform: translateX(-100%);
+      transition: 0.3s ease;
+      ul {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &-search {
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+  &-list {
+    display: flex;
+    gap: 10px;
+
+    @media (max-width: $tablet) {
+      ul {
+        flex-direction: column;
+      }
+    }
+
+    & li a {
+      color: $color-menu;
+      font-size: $body-small-size;
+      line-height: $body-small-line;
+    }
+  }
+  &-shop {
+    margin-right: 12px;
+  }
+
+  @media (max-width: $desktop) {
+    padding: 30px 49px 23px;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 23px 49px 24px 53px;
+  }
+}
+
+.main-header__hamburger {
+  &::after,
+  &::before {
+    display: block;
+    content: "";
+    width: 16px;
+    height: 2px;
+    background-color: rgba(51, 61, 75, 1);
+    margin: 3px;
+    border-radius: 1.15px;
+    cursor: pointer;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
+   
+  }
+
+  input:checked + & + .main-header__inner-nav {
+    @media (max-width: $tablet) {
+      transform: translateX(0);
+    }
+  }
+}
+
+.hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

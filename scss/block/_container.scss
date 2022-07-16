@@ -1,0 +1,15 @@
+.container {
+  max-width: $desktop-l;
+  margin: 0 auto;
+
+
+  @media (max-width: $desktop) {
+    max-width: $tablet;
+    
+  }
+
+  @media (max-width: $tablet) {
+    max-width: 100%;
+   
+  }
+}
