@@ -1,0 +1,59 @@
+.main-hero__inner {
+  display: flex;
+  padding: 170px 7px 46px 100px;
+  margin-bottom: 77px;
+  align-items: center;
+  background-image: url("../img/hero-bacgraund.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+
+  @media (max-width: $desktop) {
+    padding: 264.52px 0px 18px 100px;
+    background-image: url("../img/tablet-ellipse-hero-section.svg");
+    background-size: contain;
+
+  }
+
+  @media (max-width: $tablet) {
+    flex-direction: column-reverse;
+    background-image:url(../img) ;
+
+  }
+
+  & h2 {
+    max-width: 523px;
+    color: $color-primary;
+    font-size: 96px;
+    line-height: 86.24px;
+    margin-bottom: 38px;
+
+    @media (max-width: $tablet) {
+      font-size: 40px;
+      line-height: 35.93px;
+      position: absolute;
+    }
+  }
+
+  & p {
+    max-width: 374px;
+    color: $color-secondry;
+    line-height: $text-line;
+    font-size: $text-size;
+
+    @media (max-width: $tablet) {
+      font-size: 12px;
+      line-height: 16.8px;
+    }
+  }
+
+  &-img img {
+    
+
+    @media (max-width: $desktop){
+      flex-grow: 4;
+    }
+   
+ 
+  }
+}
