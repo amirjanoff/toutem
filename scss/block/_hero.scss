@@ -3,25 +3,37 @@
   background-repeat: no-repeat;
   background-position: top right;
   background-size: contain;
+
+  @media (max-width: $desktop) {
+    background-image: url("../img/tablet-ellipse-hero-section.svg");
+    background-size: contain;
+    background-position: right;
+  }
+
+  @media (max-width: $tablet) {
+    background-image: url("../img/hero-tablet-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: contain;
+  }
 }
 .main-hero__inner {
   display: flex;
   padding: 170px 7px 46px 100px;
   margin-bottom: 77px;
   align-items: center;
- 
 
   @media (max-width: $desktop) {
+   
     padding: 264.52px 0px 18px 100px;
-    background-image: url("../img/tablet-ellipse-hero-section.svg");
-    background-size: contain;
-
+    display: flex;
+    justify-content: left;
+    align-items: center;
   }
 
   @media (max-width: $tablet) {
     flex-direction: column-reverse;
-    background-image:url(../img) ;
-
+    
   }
 
   & h2 {
@@ -31,18 +43,23 @@
     line-height: 86.24px;
     margin-bottom: 38px;
 
+    @media (max-width: $desktop) {
+      max-width: 523px;
+      position: relative;
+    }
+
     @media (max-width: $tablet) {
       font-size: 40px;
       line-height: 35.93px;
-      position: absolute;
+      text-align: center;
+      max-width: 375px;
     }
   }
 
   & p {
     max-width: 374px;
     color: $color-secondry;
-    line-height: $text-line;
-    font-size: $text-size;
+    @include subtitle;
 
     @media (max-width: $tablet) {
       font-size: 12px;
@@ -51,12 +68,22 @@
   }
 
   &-img img {
-    
+    width: 841.62px;
+    height: 627.46px;
 
-    @media (max-width: $desktop){
-      flex-grow: 4;
+    @media (max-width: $desktop) {
+      width: 290px;
+      height: 196px;
+      position:absolute ;
     }
-   
- 
+
+    @media (max-width: $tablet) {
+       width: 135px;
+       height: 100px;
+     
+    }
   }
+}
+.hidden {
+  display: none;
 }

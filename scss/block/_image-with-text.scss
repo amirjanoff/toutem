@@ -1,13 +1,17 @@
 .image-with-text__inner {
   display: flex;
-  align-items: center;
-  background-image: url("../img/image-text-bg.svg");
+  align-items: flex-end;
+  background-image: url("../img/image-with-text-bg.svg");
   background-repeat: no-repeat;
   background-size: contain;
+  background-size: right;
+  padding: 177px 0px 0px 50px;
+  margin: 21px 91px 178px 0px;
 
   & img {
-    margin-top: 177px;
-    margin-left: 54px;
+   width: 601px;
+   height: 532px;
+   
   }
 
   &-title {

@@ -1,0 +1,26 @@
+@mixin title {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+@mixin subtitle {
+  font-size: 14px;
+  line-height: 19.6px;
+  color: $color-featured-text;
+}
+
+@mixin menu-link {
+  font-size: 12px;
+  line-height: 16.2px;
+}
+
+@mixin narx {
+  background-color: $color-primary;
+  border-radius: 8px;
+  color: $color-text;
+  font-size: 10px;
+  line-height: 9.79px;
+  letter-spacing: 1%;
+  padding: 2px 6px 4px;
+  width: 32px;
+}

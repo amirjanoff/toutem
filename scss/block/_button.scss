@@ -3,15 +3,24 @@
   width: 274px;
   border-radius: 8px;
   padding: 12px 30px;
+  font-size: 16px;
+  line-height: 15.66px;
+  width: 214px;
 }
 
 .btn-primary {
   background-color: $color-primary;
   color: $color-text;
+  width: 214px;
 
   &:hover {
     background-color: $color-menu;
     color: $color-primary;
     transition: 0.3s ease;
   }
+}
+
+.btn-secondry {
+  background-color: $color-text;
+  color: $color-menu;
 }
