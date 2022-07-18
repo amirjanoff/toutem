@@ -1,0 +1,35 @@
+.image-with-text__inner {
+  display: flex;
+  align-items: center;
+  background-image: url("../img/image-text-bg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  & img {
+    margin-top: 177px;
+    margin-left: 54px;
+  }
+
+  &-title {
+    margin-left: 120px;
+    text-align: right;
+    & h2 {
+      font-size: 50px;
+      color: $color-primary;
+      line-height: 54px;
+    }
+      
+
+    & p {
+      font-size: 14px;
+      color: $color-secondry;
+      line-height: 20px;
+      margin-top: 32px;
+      margin-bottom: 24px;
+      max-width: 374px;
+      
+      
+    }
+  
+  }
+}

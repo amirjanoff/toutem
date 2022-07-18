@@ -6,7 +6,10 @@
     justify-content: center;
     align-items: center;
   }
-  &-list {
+
+  &-link {
+    display: inline-block;
+    background-color: $color-text;
     width: 274px;
     height: 274px;
     text-align: center;
@@ -14,33 +17,25 @@
     padding-top: 70px;
     padding-bottom: 60px;
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
-    background-color: #F9FAFB;
-    a {
-      background-color: $color-text;
+    background-color: #f9fafb;
+    color: $color-primary;
 
-      p {
-        color: $color-primary;
+   
 
-        &:hover {
-          color: $color-text;
-        }
-      }
-    }
-    &:hover {
+    
+    &:hover, .main-categories__inner-box:hover {
       background-color: $color-primary;
+      color: $color-text;
     }
   }
-}
 
-.svg-box {
-  color: $color-primary;
-  margin-bottom: 17px;
+  &-box {
+    color: $color-primary;
 
-  &:hover {
-    color: $color-text;
+    
   }
 }
 
 .categories-menu-text {
-  margin-top: 28px;
+  margin-top: 12px;
 }

@@ -1,0 +1,17 @@
+.btn {
+  height: 40px;
+  width: 274px;
+  border-radius: 8px;
+  padding: 12px 30px;
+}
+
+.btn-primary {
+  background-color: $color-primary;
+  color: $color-text;
+
+  &:hover {
+    background-color: $color-menu;
+    color: $color-primary;
+    transition: 0.3s ease;
+  }
+}
