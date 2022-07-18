@@ -1,0 +1,20 @@
+.text-image {
+  background-image: url("../img/text-img-bg.png");
+  background-color: $color-primary;
+  padding-left: 98px;
+}
+
+.text-image__inner {
+  display: flex;
+
+  &-title h2 {
+    color: $color-text;
+    font-size: 50px;
+    line-height: 59.7px;
+    letter-spacing: 1%;
+    margin: 112px 170px 47px 0px;
+  }
+  & a{
+    padding: 15px 80px;
+  }
+}

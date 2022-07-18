@@ -342,6 +342,7 @@ body {
   font-size: 16px;
   line-height: 15.66px;
   width: 214px;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -358,6 +359,12 @@ body {
 .btn-secondry {
   background-color: #FFFFFF;
   color: #1F2937;
+  width: 214px;
+}
+.btn-secondry:hover {
+  background-color: #1F2937;
+  color: #FFFFFF;
+  transition: 0.3s ease;
 }
 
 .main-header__inner {
@@ -723,6 +730,26 @@ body {
 .green {
   display: block;
   background-color: #5FD788 !important;
+}
+
+.text-image {
+  background-image: url("../img/text-img-bg.png");
+  background-color: #5FD788;
+  padding-left: 98px;
+}
+
+.text-image__inner {
+  display: flex;
+}
+.text-image__inner-title h2 {
+  color: #FFFFFF;
+  font-size: 50px;
+  line-height: 59.7px;
+  letter-spacing: 1%;
+  margin: 112px 170px 47px 0px;
+}
+.text-image__inner a {
+  padding: 15px 80px;
 }
 
 .main-footer {
