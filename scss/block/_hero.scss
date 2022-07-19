@@ -1,8 +1,8 @@
 .main-hero {
-  background-image: url("../img/hero-bacgraund.png");
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: contain;
+  // background-image: url("../img/hero-bacgraund.png");
+  // background-repeat: no-repeat;
+  // background-position: top right;
+  // background-size: contain;
 
   @media (max-width: $desktop) {
     background-image: url("../img/tablet-ellipse-hero-section.svg");
@@ -22,6 +22,10 @@
   padding: 170px 7px 46px 100px;
   margin-bottom: 77px;
   align-items: center;
+  background-image: url("../img/hero-bacgraund.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
 
   @media (max-width: $desktop) {
    

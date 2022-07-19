@@ -1,17 +1,19 @@
 .image-with-text__inner {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
   background-image: url("../img/image-with-text-bg.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-size: right;
-  padding: 177px 0px 0px 50px;
-  margin: 21px 91px 178px 0px;
+  background-size:  left;
+  padding-top: 100px;
+  margin: 21px 91px 0px 0px;
 
   & img {
-   width: 601px;
-   height: 532px;
-   
+    width: 601px;
+    height: 532px;
+    margin-bottom: 40px;
+    
   }
 
   &-title {
@@ -22,7 +24,6 @@
       color: $color-primary;
       line-height: 54px;
     }
-      
 
     & p {
       font-size: 14px;
@@ -30,10 +31,7 @@
       line-height: 20px;
       margin-top: 32px;
       margin-bottom: 24px;
-      max-width: 374px;
-      
-      
+      max-height: 62px;
     }
-  
   }
 }
