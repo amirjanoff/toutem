@@ -1,13 +1,19 @@
 .text-image {
+ 
   background-image: url("../img/text-img-bg.png");
   background-color: $color-primary;
-  padding-left: 98px;
+  max-width: 1440px;
+  margin: 0 auto;
+  
 }
 
 .text-image__inner {
   display: flex;
+  margin-left: 98px;
 
   &-title h2 {
+    max-width: 523px;
+    font-weight: 600;
     color: $color-text;
     font-size: 50px;
     line-height: 59.7px;

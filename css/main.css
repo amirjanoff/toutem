@@ -326,6 +326,7 @@ body {
 @media (max-width: 1200px) {
   .container {
     max-width: 768px;
+    margin: 0 auto;
   }
 }
 @media (max-width: 768px) {
@@ -370,11 +371,12 @@ body {
 .main-header__inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 26px 84px 26px 104px;
   position: fixed;
   background-color: #FFFFFF;
-  width: 100%;
+  width: 1440px;
+  z-index: 2;
 }
 @media (max-width: 1200px) {
   .main-header__inner {
@@ -385,6 +387,9 @@ body {
   .main-header__inner {
     padding: 23px 49px 23px 53px;
   }
+}
+.main-header__inner-nav {
+  margin-right: 40px;
 }
 @media (max-width: 768px) {
   .main-header__inner-nav {
@@ -735,13 +740,17 @@ body {
 .text-image {
   background-image: url("../img/text-img-bg.png");
   background-color: #5FD788;
-  padding-left: 98px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .text-image__inner {
   display: flex;
+  margin-left: 98px;
 }
 .text-image__inner-title h2 {
+  max-width: 523px;
+  font-weight: 600;
   color: #FFFFFF;
   font-size: 50px;
   line-height: 59.7px;
@@ -750,6 +759,46 @@ body {
 }
 .text-image__inner a {
   padding: 15px 80px;
+}
+
+.featured-products-bg {
+  background-image: url("../img/trends-bg.png");
+  background-repeat: no-repeat, no-repeat;
+  z-index: -1;
+  background-image: inline;
+}
+
+.main-blog__inner {
+  margin-bottom: 71px;
+}
+.main-blog__inner h2 {
+  font-size: 50px;
+  line-height: 53.95px;
+  color: #5FD788;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.main-blog__inner ul {
+  display: flex;
+  max-width: 371px;
+  gap: 24px;
+  margin: 0 139px;
+}
+.main-blog__inner ul li {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.main-blog__inner ul li h3 {
+  margin: 22px 23px 35px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #5FD788;
+}
+.main-blog__inner ul li p {
+  font-size: 16px;
+  color: #1F2937;
+  line-height: 24px;
+  margin: 22.64px;
 }
 
 .main-footer {
