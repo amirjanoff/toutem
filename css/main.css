@@ -609,16 +609,19 @@ body {
   margin-top: 12px;
 }
 
-.image-with-text__inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.image-with-text {
   background-image: url("../img/image-with-text-bg.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-size: left;
   padding-top: 100px;
   margin: 21px 91px 0px 0px;
+}
+
+.image-with-text__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .image-with-text__inner img {
   width: 601px;
@@ -643,15 +646,21 @@ body {
   max-height: 62px;
 }
 
-.featured-products__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.featured-products {
   background-image: url("../img/FEATURED-PRODUCTS-bg.svg");
   background-repeat: no-repeat;
   background-position: left top;
   margin-top: 185px;
   padding-bottom: 180px;
+}
+.featured-products--2 {
+  background-image: url("../img/trends-bg.png");
+}
+
+.featured-products__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .featured-products__inner-link {
   margin-left: 96px;
@@ -749,22 +758,37 @@ body {
 .text-image {
   background-image: url("../img/text-img-bg.png");
   background-color: #5FD788;
-  max-width: 1440px;
   margin: 0 auto;
+}
+
+.text-image__inner-title,
+.text-image__inner-img {
+  width: 50%;
+}
+.text-image__inner-title img,
+.text-image__inner-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.text-image__inner-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
 }
 
 .text-image__inner {
   display: flex;
-  margin-left: 98px;
 }
 .text-image__inner-title h2 {
-  max-width: 523px;
   font-weight: 600;
   color: #FFFFFF;
   font-size: 50px;
   line-height: 59.7px;
   letter-spacing: 1%;
-  margin: 112px 170px 47px 0px;
+  margin-bottom: 30px;
 }
 .text-image__inner a {
   padding: 15px 80px;
@@ -803,10 +827,13 @@ body {
   margin: 22.64px;
 }
 
+.main-footer {
+  background-color: #F3F4F6;
+}
+
 .main-footer__inner {
   justify-content: center;
   padding-left: 103px;
-  background-color: #F3F4F6;
 }
 .main-footer__inner-img img {
   transform: translateY(75%);
