@@ -1,11 +1,17 @@
+.main-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $color-text;
+}
+
 .main-header__inner {
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 26px 84px 26px 104px;
-  position: fixed;
-  background-color: $color-text;
-  width: 1440px;
+  width: 100%;
   z-index: 2;
 
   @media (max-width: $desktop) {

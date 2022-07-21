@@ -368,14 +368,21 @@ body {
   transition: 0.3s ease;
 }
 
+.main-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
 .main-header__inner {
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 26px 84px 26px 104px;
-  position: fixed;
-  background-color: #FFFFFF;
-  width: 1440px;
+  width: 100%;
   z-index: 2;
 }
 @media (max-width: 1200px) {
@@ -471,6 +478,15 @@ body {
   width: 1px;
 }
 
+.main-hero {
+  padding: 170px 7px 46px 100px;
+  margin-bottom: 77px;
+  align-items: center;
+  background-image: url("../img/hero-bacgraund.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+}
 @media (max-width: 1200px) {
   .main-hero {
     background-image: url("../img/tablet-ellipse-hero-section.svg");
@@ -489,13 +505,6 @@ body {
 
 .main-hero__inner {
   display: flex;
-  padding: 170px 7px 46px 100px;
-  margin-bottom: 77px;
-  align-items: center;
-  background-image: url("../img/hero-bacgraund.png");
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: contain;
 }
 @media (max-width: 1200px) {
   .main-hero__inner {
