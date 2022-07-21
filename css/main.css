@@ -776,7 +776,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 40px;
+  padding: 41px;
 }
 
 .text-image__inner {
