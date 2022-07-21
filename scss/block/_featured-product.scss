@@ -1,12 +1,20 @@
-.featured-products__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.featured-products {
   background-image: url("../img/FEATURED-PRODUCTS-bg.svg");
   background-repeat: no-repeat;
   background-position: left top;
   margin-top: 185px;
   padding-bottom: 180px;
+
+  &--2 {
+    background-image:  url("../img/trends-bg.png");
+  }
+}
+
+.featured-products__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
   &-link {
     margin-left: 96px;
     & h2 {

@@ -1,24 +1,36 @@
 .text-image {
- 
   background-image: url("../img/text-img-bg.png");
   background-color: $color-primary;
-  max-width: 1440px;
-  margin: 0 auto;
-  
+  margin: 0 auto; 
+}
+
+.text-image__inner-title,
+.text-image__inner-img {
+  width: 50%;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.text-image__inner-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
 }
 
 .text-image__inner {
   display: flex;
-  margin-left: 98px;
 
   &-title h2 {
-    max-width: 523px;
     font-weight: 600;
     color: $color-text;
     font-size: 50px;
     line-height: 59.7px;
     letter-spacing: 1%;
-    margin: 112px 170px 47px 0px;
+    margin-bottom: 30px;
   }
   & a{
     padding: 15px 80px;
